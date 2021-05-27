@@ -24,19 +24,20 @@ public class ScriptProdMP : MonoBehaviour
     private void OnMouseUp()
     {
         if (!baseUi.activeSelf)
+        {
             baseUi.SetActive(true);
 
-        if (!closeButton.activeSelf)
-            closeButton.SetActive(true);
+            if (!closeButton.activeSelf)
+                closeButton.SetActive(true);
 
-        if (!batimentText.activeSelf)
-            batimentText.SetActive(true);
+            if (!batimentText.activeSelf)
+                batimentText.SetActive(true);
 
-        if (!greenUpgradeButton.activeSelf /*&& batiment améliorable*/)
-            greenUpgradeButton.SetActive(true);
+            if (!greenUpgradeButton.activeSelf /*&& batiment améliorable*/)
+                greenUpgradeButton.SetActive(true);
 
-        else if (!greyUpgradeButton.activeSelf)
-            greyUpgradeButton.SetActive(true);
-
+            else if (!greyUpgradeButton.activeSelf)
+                greyUpgradeButton.SetActive(true);
+        } 
     }
 }

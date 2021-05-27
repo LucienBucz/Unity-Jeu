@@ -26,25 +26,26 @@ public class ScriptMarche : MonoBehaviour
     private void OnMouseUp()
     {
         if (!baseUi.activeSelf)
+        {
             baseUi.SetActive(true);
 
-        if (!closeButton.activeSelf)
-            closeButton.SetActive(true);
+            if (!closeButton.activeSelf)
+                closeButton.SetActive(true);
 
-        if (!batimentText.activeSelf)
-            batimentText.SetActive(true);
+            if (!batimentText.activeSelf)
+                batimentText.SetActive(true);
 
-        if (!greenUpgradeButton.activeSelf /*&& batiment améliorable*/)
-            greenUpgradeButton.SetActive(true);
+            if (!greenUpgradeButton.activeSelf /*&& batiment améliorable*/)
+                greenUpgradeButton.SetActive(true);
 
-        else if (!greyUpgradeButton.activeSelf /*&& bâtiment construit*/)
-            greyUpgradeButton.SetActive(true);
+            else if (!greyUpgradeButton.activeSelf /*&& bâtiment construit*/)
+                greyUpgradeButton.SetActive(true);
 
-        else if (!greenBuildButton.activeSelf /*&& batiment constructible*/)
-            greenBuildButton.SetActive(true);
+            else if (!greenBuildButton.activeSelf /*&& batiment constructible*/)
+                greenBuildButton.SetActive(true);
 
-        else if (!greyBuildButton.activeSelf)
-            greyBuildButton.SetActive(true);
-
+            else if (!greyBuildButton.activeSelf)
+                greyBuildButton.SetActive(true);
+        }
     }
 }
