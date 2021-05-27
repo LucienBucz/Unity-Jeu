@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Jeu_Unity2._0
 {
-    class Environment
+    public class Environment
     {
         const int NB_TOUR_FAMINE = 3;
         const int BANK_START = 10;
@@ -34,7 +34,6 @@ namespace Jeu_Unity2._0
             this.lAtelier = lAtelier;
             this.lhotel = lhotel;
             this.NbTurn = 1;
-            this.BankFish = this.LaCabane.LvlBatiment * this.LaCabane.IncomeFish;
             this.BillyMort = 0;
            
             Population();

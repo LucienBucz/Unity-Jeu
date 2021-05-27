@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Jeu_Unity2._0
 {
-    class Maison:Batiment
+    public class Maison:Batiment
     {
         const int BANK_START = 10;
         const int LVL_MAX_MAISON = 3;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Jeu_Unity2._0
 {
-     abstract class Batiment
+     public abstract class Batiment
     {
 
         private string nomBatiment;

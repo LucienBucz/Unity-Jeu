@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Jeu_Unity2._0
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {

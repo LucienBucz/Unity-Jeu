@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Jeu_Unity2._0
 {
-    class Hdv : Batiment
+    public class Hdv : Batiment
     {
         const int LVL_MAX_HDV= 1;
 
