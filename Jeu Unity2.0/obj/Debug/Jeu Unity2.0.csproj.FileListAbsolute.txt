@@ -1,0 +1,7 @@
+P:\Jeu Unity2.0\obj\Debug\Jeu Unity2.0.csprojAssemblyReference.cache
+P:\Jeu Unity2.0\obj\Debug\Jeu Unity2.0.csproj.CoreCompileInputs.cache
+P:\Jeu Unity2.0\bin\Debug\Jeu Unity2.0.exe.config
+P:\Jeu Unity2.0\bin\Debug\Jeu Unity2.0.exe
+P:\Jeu Unity2.0\bin\Debug\Jeu Unity2.0.pdb
+P:\Jeu Unity2.0\obj\Debug\Jeu Unity2.0.exe
+P:\Jeu Unity2.0\obj\Debug\Jeu Unity2.0.pdb
