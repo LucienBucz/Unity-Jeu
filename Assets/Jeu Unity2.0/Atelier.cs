@@ -33,7 +33,7 @@ namespace Jeu_Unity2._0
             this.LvlBatiment++;
             PopBatiment();
             
-            this.StorageMp = this.StorageMp * 40 / 100;
+            this.StorageMp = this.StorageMp * 140 / 100;
             return this.PrixAmilioration;
         }
 

@@ -28,11 +28,18 @@ public class ScriptEnvironnement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 
     public Environment GiveE() 
     {
         return stockE;
+    }
+
+    public void Reinitialise()
+    {
+        Debug.Log("try restart");
+        Environment nnv = new Environment(new Cabane(), new Atelier(), new Hdv(), new Maison());
+        stockE = nnv;
     }
 }

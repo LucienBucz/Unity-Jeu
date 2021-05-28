@@ -15,7 +15,7 @@ public class ScriptQuitter : MonoBehaviour
     {
         
     }
-    private void OnMouseDown()
+    public void Quitter()
     {
         Application.Quit();
     }

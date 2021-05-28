@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Jeu_Unity2._0;
 
 public class ScriptHosto : MonoBehaviour
 {

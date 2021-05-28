@@ -11,6 +11,7 @@ public class CloseButton : MonoBehaviour
     public GameObject greyUpgradeButton;
     public GameObject greenBuildButton;
     public GameObject greyBuildButton;
+    public GameObject restartButton;
 
     public GameObject mairieText;
     public GameObject marcheText;
@@ -20,6 +21,12 @@ public class CloseButton : MonoBehaviour
     public GameObject amphiText;
     public GameObject hostoText;
     public GameObject habitationsText;
+    public GameObject creditsText;
+    public GameObject winPanel;
+    public GameObject losePanel;
+    public GameObject textConstru;
+    public GameObject textAme;
+    public GameObject textPrix;
 
     // Start is called before the first frame update
     void Start()
@@ -33,9 +40,8 @@ public class CloseButton : MonoBehaviour
 
     }
 
-    public void Clic()
+    public void Close()
     {
-
 
         if (baseUi.activeSelf)
             baseUi.SetActive(false);
@@ -78,6 +84,27 @@ public class CloseButton : MonoBehaviour
 
         if (habitationsText.activeSelf)
             habitationsText.SetActive(false);
+
+        if (creditsText.activeSelf)
+            creditsText.SetActive(false);
+
+        if (winPanel.activeSelf)
+            winPanel.SetActive(false);
+
+        if (losePanel.activeSelf)
+            losePanel.SetActive(false);
+
+        if (restartButton.activeSelf)
+            restartButton.SetActive(false);
+
+        if (textConstru.activeSelf)
+            textConstru.SetActive(false);
+
+        if (textAme.activeSelf)
+            textAme.SetActive(false);
+
+        if (textPrix.activeSelf)
+            textPrix.SetActive(false);
     }
        
 }

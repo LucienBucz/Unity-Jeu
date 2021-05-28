@@ -34,7 +34,7 @@ namespace Jeu_Unity2._0
         public override int MonterDeNiveau()
         {
             this.LvlBatiment++;
-            this.StorageFish = this.StorageFish * 40 / 100;
+            this.StorageFish = this.StorageFish * 140 / 100;
             PopBatiment();
             
             return this.PrixAmilioration;

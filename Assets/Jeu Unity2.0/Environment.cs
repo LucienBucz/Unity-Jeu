@@ -8,8 +8,8 @@ namespace Jeu_Unity2._0
 {
     public class Environment
     {
-        const int NB_TOUR_FAMINE = 3;
-        const int BANK_START = 10;
+        public const int NB_TOUR_FAMINE = 3;
+        public const int BANK_START = 10;
 
 
         private Cabane laCabane;
@@ -88,7 +88,7 @@ namespace Jeu_Unity2._0
 
         public void ConstructionCabane()
         {
-            this.LaCabane.IncomeFish = BANK_START * 30 / 100;
+            this.LaCabane.IncomeFish = BANK_START * 40 / 100;
             this.LaCabane.StorageFish = BANK_START * 140 / 100;
             this.laCabane.LvlBatiment = 1;
             this.LaCabane.NbBilly = 2;
@@ -98,7 +98,7 @@ namespace Jeu_Unity2._0
         }
         public void ConstructionAtelier()
         {
-            this.LAtelier.IncomeMp = BANK_START * 30 / 100;
+            this.LAtelier.IncomeMp = BANK_START * 40 / 100;
             this.LAtelier.StorageMp = BANK_START * 140 / 100;
             this.LAtelier.LvlBatiment = 1;
             this.LAtelier.NbBilly = 2;
@@ -199,25 +199,26 @@ namespace Jeu_Unity2._0
 
         public  bool EstAmeliorableCabane()
         {
-            bool res = true;
-            if (this.LaCabane.PrixAmilioration<=this.BankMp)
-                res = false;
+            bool res = false;
+            if (this.LaCabane.PrixAmilioration <= this.BankMp && this.LaCabane.LvlBatiment < this.LaCabane.LvlMax)
+                res = true;
             return res; 
         }
         public bool EstAmeliorableAtelier()
         {
-            bool res = true;
-            if (this.LAtelier.PrixAmilioration <= this.BankMp)
-                res = false;
+            bool res = false;
+            if (this.LAtelier.PrixAmilioration <= this.BankMp && this.LAtelier.LvlBatiment < this.LAtelier.LvlMax)
+                res = true;
             return res;
         }
         public bool EstAmeliorableMaison()
         {
-            bool res = true;
-            if (this.LaMaison.PrixAmilioration <= this.BankMp)
-                res = false;
+            bool res = false;
+            if (this.LaMaison.PrixAmilioration <= this.BankMp && this.LaMaison.LvlBatiment < this.LaMaison.LvlMax)
+                res = true;
             return res;
         }
+
         public override string ToString()
         {
             return "Batiment : \n"+"------------------------------------------------------------------------------------------------------------\n"
